@@ -16,7 +16,7 @@ interface IHome {
           </div>
           <div className="container mx-auto flex flex-col md:flex-row md:items-center gap-4 px-4 md:px-10">
             <p>
-                Send us an email at extrasentialism@info.com and detail all your woes! We'll match you to one of the world's leading existentialist philosophers and set you on the right path! Get some of the best, applicable life knowledge today, only at Extratentialist!
+            Send us an email at extrasentialism@info.com and detail all your woes! We&apos;ll match you to one of the world&apos;s leading existentialist philosophers and set you on the right path! Get some of the best, applicable life knowledge today, only at Extratentialist!
             </p>
           </div>
       </section>
