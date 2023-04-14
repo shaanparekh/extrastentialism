@@ -6,8 +6,7 @@ const menuItems = [
   { label: 'Home', link: '/' },
   { label: 'Current Events', link: '/current-events' },
   { label: 'Advice Column', link: '/advice' },
-  { label: 'Submit Letter', link: '/'},
-  { label: 'About', link: '/'}
+  { label: 'Submit Letter', link: '/letter'},
 ];
 
 const Header = () => {

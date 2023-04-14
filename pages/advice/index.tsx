@@ -1,8 +1,7 @@
 import MainLayout from '@/components/layout';
 import AdvicePosts from '@/components/sections/advicePosts';
 import CTA from '@/components/sections/cta';
-import SEO from '@/components/sections/seo';
-import { getAllPosts } from 'lib/mdx';
+import { getAdvicePosts, getAllPosts } from 'lib/mdx';
 import { IPostMeta } from 'types';
 import { NextPageWithLayout } from '../page';
 
@@ -23,7 +22,7 @@ export default Home;
 Home.getLayout = (page) => <MainLayout>{page}</MainLayout>;
 
 export async function getStaticProps() {
-  const postsMeta = getAllPosts()
+  const postsMeta = getAdvicePosts()
     .slice(0, 9)
     .map((post) => post.meta);
 
