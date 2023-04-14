@@ -1,7 +1,6 @@
 import MainLayout from '@/components/layout';
 import { MDXComponents } from '@/components/MDXComponents';
 import CTA from '@/components/sections/cta';
-import SEO from '@/components/sections/seo';
 import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import 'highlight.js/styles/atom-one-dark.css';
 import { getPostFromSlug, getSlugs } from 'lib/mdx';
@@ -26,8 +25,6 @@ const PostPage: NextPageWithLayout<IPostPage> = ({ post }) => {
   const router = useRouter();
   return (
     <>
-      <SEO title={`/images/${post.meta.title}`} urlImage={post.meta.image} />
-
       <section className="py-10">
         <div className="container mx-auto px-4 md:px-20">
           <div
